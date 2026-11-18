@@ -1,6 +1,12 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7aaff5&height=150&section=header&text=🚌잔여좌석을%20반영한%20최단시간%20길%20찾기:%20서울-경기%20광역버스&fontSize=30&fontColor=102f57" />
 
 
+
+> **이 저장소는 팀 프로젝트의 포크입니다. 정영균(@suipizza)은 백엔드·예측 모델을 맡았습니다.**
+> - 교통카드 빅데이터와 공공 API로 정류장·시간대별 승하차 데이터 수집·전처리
+> - Prophet, SARIMA, LSTM으로 정류장별 재차·승차 인원을 예측하고 RMSE 등으로 성능 비교
+> - 예측값에 포아송 분포를 적용해 정류장별 승차 가능 확률 계산
+
 # 2024-2-SCS4031-JP-8
 
 ### 🚀 프로젝트 이름
