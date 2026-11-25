@@ -1,11 +1,43 @@
+# 또타자: 광역버스 정류장 추천 서비스
+
+정류장별 승차 인원을 Prophet, SARIMA, LSTM으로 예측해 비교하고, 승차 가능 확률로 바꿔 추천
+
+> 이 저장소는 동국대 융합캡스톤디자인 팀 프로젝트의 포크입니다. 위쪽은 정영균의 담당 내용 요약, 아래쪽은 팀 README 원본입니다.
+
+**포트폴리오**: [suipizza.github.io/projects/ttaja.html](https://suipizza.github.io/projects/ttaja.html)
+
+<img src="readme_img/tj_service.png" alt="서비스 구성: 잔여 좌석 예측, 탑승 확률 계산, 정류장 추천" width="820">
+
+| 기간 | 형태 | 기술 |
+|---|---|---|
+| 2024 2학기 | 4인 팀, 예측 모델 담당 (캡스톤디자인) | Prophet, SARIMA, LSTM, Pandas, REST API |
+
+## 내 역할
+
+- 교통카드 빅데이터와 공공 API로 정류장, 시간대별 승하차 데이터 수집과 전처리
+- Prophet, SARIMA, LSTM으로 승차 인원 예측, RMSE 등으로 비교
+- 예측값에 포아송 분포를 적용해 정류장별 승차 가능 확률 계산
+
+<img src="readme_img/tj_models.png" alt="예측 성능 비교" width="820">
+
+*SARIMA, LSTM, Prophet 예측 성능 비교 (MSE)*
+
+<img src="readme_img/tj_prob.png" alt="탑승 확률 계산" width="820">
+
+*예측값으로 탑승 확률 계산 (포아송 분포)*
+
+<img src="readme_img/tj_arch.png" alt="시스템 구조" width="820">
+
+*시스템 구조*
+
+---
+
+<details>
+<summary><b>팀 README 원본 보기</b></summary>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7aaff5&height=150&section=header&text=🚌잔여좌석을%20반영한%20최단시간%20길%20찾기:%20서울-경기%20광역버스&fontSize=30&fontColor=102f57" />
 
 
-
-> **이 저장소는 팀 프로젝트의 포크입니다. 정영균(@suipizza)은 백엔드·예측 모델을 맡았습니다.**
-> - 교통카드 빅데이터와 공공 API로 정류장·시간대별 승하차 데이터 수집·전처리
-> - Prophet, SARIMA, LSTM으로 정류장별 재차·승차 인원을 예측하고 RMSE 등으로 성능 비교
-> - 예측값에 포아송 분포를 적용해 정류장별 승차 가능 확률 계산
 
 # 2024-2-SCS4031-JP-8
 
@@ -311,3 +343,6 @@
 #### 🔖 커밋 푸터
 
 이슈 번호 추가, 생략 가능
+
+
+</details>
